@@ -6,25 +6,25 @@ def insertAt_i_Position(head,i,data):
     if i<0 or i>length(head):
         return head
     
-    count=0
-    prev=None
-    curr=head
+    count = 0
+    prev = None
+    curr = head
     
     while count<i:
                 
-        prev=curr
-        curr=curr.next
-        count=count+1
+        prev = curr
+        curr = curr.next
+        count = count+1
     
-    newNode=Node(data)
+    newNode = Node(data)
     
     if prev is not None:
-        prev.next=newNode
+        prev.next = newNode
     
     else:
-        head=newNode
+        head = newNode
         
-    newNode.next=curr
+    newNode.next = curr
     
     return head
 
