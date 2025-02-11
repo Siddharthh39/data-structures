@@ -12,6 +12,8 @@ def appendLastNToFirst(head, n):
         curr = curr.next
 
     return 
+
 n = int(input("enter the value: "))
 head = appendLastNToFirst(head,n)
 print(head)
+
